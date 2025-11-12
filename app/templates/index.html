@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %} AI Recommender {% endblock %}
+{% block content %}
+<div class="form-container">
+<h1>AI Tools Recommender</h1>
+<form method="POST">
+	<input type="text" name="need" placeholder="Enter your use case (e.g. write essays)">
+	<button type="submit">Get Recommendations</button>
+</form>
+
+{% if recommendations %}
+<div class="results">
+<ul>
+	{% for tool in recommendations %}
+	<li>{{ tool }}</li>
+	{% endfor %}
+</ul>
+</div>
+{% endif %}
+</div>
+{% endblock %}

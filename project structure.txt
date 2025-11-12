@@ -1,0 +1,16 @@
+recommender system/
+|--requirements.txt
+|--data/
+|   |--ai_tools.csv
+|--run.py
+|--app/
+|   |--recommender.py
+|   |--__init__.py
+|   |-- route/
+|   |   |--main.py
+|   |--templates/
+|   |   |--base.html
+|   |   |--index.html
+|   |--static/
+|   |   |--css/
+|   |   |   |--styles.css
