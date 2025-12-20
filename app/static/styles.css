@@ -19,7 +19,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2); /* 👈 Adjuster more/less darkness */
+  background: rgba(0, 0, 0, 0.1); /* 👈 Adjuster more/less darkness */
   z-index: -1;
 }
 
@@ -73,7 +73,8 @@ form input[type="text"] {
   border: none;
   outline: none;
   margin-bottom: 18px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.4);
+/*  background: rgba(255, 255, 255, 0.1);*/
   color: #fff;
   font-size: 1rem;
   font-family: 'Manrope', sans-serif;
@@ -81,9 +82,21 @@ form input[type="text"] {
   transition: all 0.3s ease;
 }
 
+/* Gradient border wrapper effect */
+form input[type="text"]::before {
+  content: "";
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00ffe7, #ff00f5, #8c00ff);
+  z-index: -1;
+}
+
 form input[type="text"]:focus {
   border: 1.5px solid transparent;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.4);
+/*  color: #fff;
+  background: rgba(255, 255, 255, 0.1);*/
   border-image: linear-gradient(135deg, #00ffe7, #ff00f5, #8c00ff) 1;
 }
 

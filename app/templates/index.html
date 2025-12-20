@@ -3,7 +3,7 @@
 <div class="form-container">
 <h1>AI Tools Recommender</h1>
 <form method="POST">
-	<input type="text" name="need" placeholder="Enter your use case (e.g. write essays)">
+	<input type="text" name="need" placeholder="Enter your use case (e.g. write essays)" value="{{ request.form.need if request.method == 'POST' else '' }}">
 	<button type="submit">Get Recommendations</button>
 </form>
 

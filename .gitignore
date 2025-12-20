@@ -1,34 +1,69 @@
-# Byte-compiled / cache files
+# =========================
+# Python
+# =========================
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
+# =========================
+# Virtual Environments
+# =========================
 venv/
 env/
 ENV/
 
-# Flask instance folder
+# =========================
+# Flask
+# =========================
 instance/
 *.db
 *.sqlite3
 
-# VSCode and PyCharm
-.vscode/
-.idea/
-
-# Environment variables
+# =========================
+# Environment Variables
+# =========================
 .env
 *.env
 
-# OS files
-.DS_Store
-Thumbs.db
+# =========================
+# Playwright
+# =========================
+ms-playwright/
 
+# =========================
+# Scraped Data / Datasets
+# =========================
+data/
+datasets/
+*.csv
+!app/scraped_data1.csv
+
+# =========================
 # Logs
+# =========================
 *.log
 
-# Build/Distribution
+# =========================
+# Screenshots / Videos
+# =========================
+screenshots/
+videos/
+
+# =========================
+# Build / Distribution
+# =========================
 build/
 dist/
 *.egg-info/
+
+# =========================
+# IDEs / Editors
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
