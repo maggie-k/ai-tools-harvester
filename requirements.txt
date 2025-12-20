@@ -1,5 +1,4 @@
 Flask
 pandas
 rapidfuzz
-fuzzywuzzy
-python-Levenshtein
+playwright
