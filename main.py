@@ -13,7 +13,7 @@ async def main():
             return
 
         query = input_data["query"]
-        max_results = input_data.get("maxResults", 5)
+        max_results = input_data.get("maxResults", 7)
         threshold = input_data.get("strictness", 59)
         
         try:
