@@ -1,0 +1,55 @@
+{
+  "title": "Input schema for AI Tools Harvester",
+  "description": "Enter a use case or task description to receive recommended AI tools. Configure optional matching and result settings, then run the Actor to scrape and rank relevant AI tools.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "query": {
+      "title": "Use case or task",
+      "type": "string",
+      "description": "Describe what you want to use AI for (e.g. personal assistant, content writing, meeting notes).",
+      "editor": "textfield",
+      "placeholder": "e.g. personal assistant"
+    },
+
+    "maxResults": {
+      "sectionCaption": "Result settings",
+      "title": "Maximum results",
+      "type": "integer",
+      "description": "Maximum number of AI tools to return.",
+      "minimum": 1,
+      "maximum": 20,
+      "default": 5
+    },
+
+    "strictness": {
+      "title": "Matching strictness",
+      "type": "integer",
+      "description": "Controls how strictly the input query must match tool descriptions (0 = loose, 100 = very strict).",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 70
+    },
+
+    "enableScraping": {
+      "sectionCaption": "Scraping settings",
+      "title": "Enable live scraping",
+      "type": "boolean",
+      "description": "If enabled, the Actor will scrape sources live. If disabled, it may use cached or static data.",
+      "default": true
+    },
+
+    "sources": {
+      "title": "Sources to include",
+      "type": "array",
+      "description": "Optional list of sources to scrape AI tools from.",
+      "editor": "select",
+      "items": {
+        "type": "string",
+        "enum": ["producthunt", "aitooldirectories", "custom"]
+      },
+      "default": ["producthunt"]
+    }
+  },
+  "required": ["query"]
+}
