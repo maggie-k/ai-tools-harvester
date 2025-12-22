@@ -41,7 +41,7 @@ async def main():
                     "score": score
                 }
                 await Actor.push_data(data)
-                print("Pushed data to dataset:", data)
+                print("✅ Pushed data to dataset:", data)
 
         print("Actor run completed.")
 
