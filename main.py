@@ -14,7 +14,7 @@ async def main():
 
         query = input_data["query"]
         max_results = input_data.get("maxResults", 5)
-        threshold = input_data.get("strictness", 70)
+        threshold = input_data.get("strictness", 59)
         
         try:
             df = pd.read_csv("app/scraped_data1.csv")
