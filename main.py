@@ -11,7 +11,7 @@ async def main():
         max_results = input_data.get("maxResults", 5)
         threshold = input_data.get("strictness", 70)
 
-        df = pd.read_csv("ai-tools-harvester/app/scraped_data1.csv")
+        df = pd.read_csv("app/scraped_data1.csv")
 
         matches = process.extract(
             query,
