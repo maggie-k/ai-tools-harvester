@@ -45,11 +45,12 @@
       "editor": "select",
       "items": {
         "type": "string",
-        "enum": ["producthunt", "aitooldirectories", "custom"]
+        "enum": ["aitooldirectories"]
       },
-      "default": ["producthunt"]
+      "default": ["aitooldirectories"]
     }
   },
   "required": ["query"]
 }
+
 
