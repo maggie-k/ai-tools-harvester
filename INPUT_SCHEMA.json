@@ -8,8 +8,7 @@
       "title": "Use case or task",
       "type": "string",
       "description": "Describe what you want to use AI for (e.g. personal assistant, content writing, meeting notes).",
-      "editor": "textfield",
-      "placeholder": "e.g. personal assistant"
+      "editor": "textfield"      
     },
 
     "maxResults": {
@@ -53,3 +52,4 @@
   },
   "required": ["query"]
 }
+
