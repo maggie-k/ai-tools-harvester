@@ -1,0 +1,19 @@
+{
+  "title": "AI Tool Matches",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number"
+    }
+  },
+  "required": ["name", "website", "score"]
+}
