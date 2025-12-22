@@ -1,6 +1,5 @@
 from flask import Blueprint, render_template, request, current_app
 from app.recommender import recommend_tools
-#from app.models import init_db
 
 #init_db()
 
