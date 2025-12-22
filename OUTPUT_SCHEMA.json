@@ -1,0 +1,39 @@
+{
+  "title": "AI Tools Harvester Dataset Item",
+  "description": "One recommended AI tool matching the provided use case.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Tool name",
+      "type": "string",
+      "description": "Name of the AI tool"
+    },
+    "category": {
+      "title": "Category",
+      "type": "string",
+      "description": "Primary category or use case"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string",
+      "description": "Short description of the AI tool"
+    },
+    "website": {
+      "title": "Website",
+      "type": "string",
+      "description": "Official website URL",
+      "format": "uri"
+    },
+    "score": {
+      "title": "Relevance score",
+      "type": "number",
+      "description": "Relevance score based on matching logic"
+    },
+    "source": {
+      "title": "Source",
+      "type": "string",
+      "description": "Source where the tool was discovered"
+    }
+  },
+  "required": ["name", "website", "score"]
+}
