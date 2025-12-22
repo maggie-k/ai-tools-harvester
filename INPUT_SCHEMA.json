@@ -1,6 +1,5 @@
 {
-  "title": "Input schema for AI Tools Harvester",
-  "description": "Enter a use case or task description to receive recommended AI tools. Configure optional matching and result settings, then run the Actor to scrape and rank relevant AI tools.",
+  "title": "Actor input schema",  
   "type": "object",
   "schemaVersion": 1,
   "properties": {
@@ -52,6 +51,7 @@
   },
   "required": ["query"]
 }
+
 
 
 
