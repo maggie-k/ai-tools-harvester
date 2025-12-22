@@ -16,7 +16,7 @@
       "description": "Maximum number of AI tools to return.",
       "minimum": 1,
       "maximum": 20,
-      "default": 5
+      "default": 7
     },
     "strictness": {
       "title": "Matching strictness",
@@ -24,7 +24,7 @@
       "description": "Controls how strictly the input query must match tool descriptions (0 = loose, 100 = very strict).",
       "minimum": 0,
       "maximum": 100,
-      "default": 70
+      "default": 59
     },
     "enableScraping": {
       "sectionCaption": "Scraping settings",
@@ -47,3 +47,4 @@
   },
   "required": ["query"]
 }
+
