@@ -1,22 +1,34 @@
 from apify import Actor
 import asyncio
+import pandas as pd
+from rapidfuzz import process, fuzz
 
 async def main():
     async with Actor:
         input_data = await Actor.get_input()
-        Actor.log.info(f"Input received: {input_data}")
 
-        # Call your existing backend logic here
-        # Example:
-        # results = run_scraper(input_data)
+        query = input_data["query"]
+        max_results = input_data.get("maxResults", 5)
+        threshold = input_data.get("strictness", 70)
 
-        # Dummy example output
-        await Actor.push_data({
-            "name": "Example AI Tool",
-            "website": "https://example.com",
-            "category": "LLM",
-            "score": 0.92
-        })
+        df = pd.read_csv("data/ai_tools.csv")
+
+        matches = process.extract(
+            query,
+            df["description"].fillna("").tolist(),
+            scorer=fuzz.token_sort_ratio,
+            limit=max_results
+        )
+
+        for match, score, idx in matches:
+            if score >= threshold:
+                row = df.iloc[idx]
+                await Actor.push_data({
+                    "name": row["name"],
+                    "website": row["website"],
+                    "category": row.get("category"),
+                    "score": score
+                })
 
 if __name__ == "__main__":
     asyncio.run(main())
