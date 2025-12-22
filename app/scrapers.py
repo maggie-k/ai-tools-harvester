@@ -99,7 +99,7 @@ def scrape_tools():
 					print("\nReached the last page!")
 					break
 			
-			df=pd.DataFrame(data) #link issue, save to csv finally
+			df=pd.DataFrame(data) 
 
 			print(df.tail(5))
 
