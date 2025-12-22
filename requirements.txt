@@ -3,6 +3,3 @@ flask
 playwright
 pandas
 rapidfuzz
-traceback
-csv
-time
