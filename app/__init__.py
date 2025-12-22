@@ -9,17 +9,3 @@ def create_app():
 	app.register_blueprint(main)
 
 	return app
-
-
-#Invert the dependency
-#Instead of db importing from app, pass what it needs:
-#db.py 
-#def init_db(app)
-# app.py 
-#from db import init_db 
-#init_db(app) 
-
-#Import inside the function
-#def db():
-		#from app.models import init_db
-		#init_db()
