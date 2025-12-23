@@ -1,7 +1,7 @@
 {
   "actorSpecification": 1,
-  "name": "ai-tools-harvestor",
-  "title": "AI Tools Harvestor",
+  "name": "ai-tools-harvester",
+  "title": "AI Tools Harvester",
   "version": "1.0.0",
   "storages": {
     "dataset": {
@@ -18,7 +18,25 @@
             ]
           },
           "display": {
-            "component": "table"
+            "component": "table",
+            "properties": {
+              "name": {
+                "label": "Tool Name",
+                "format": "text"
+              },
+              "website": {
+                "label": "Website",
+                "format": "link"
+              },
+              "category": {
+                "label": "Category",
+                "format": "text"
+              },
+              "score": {
+                "label": "Relevance Score",
+                "format": "number"
+              }
+            }
           }
         }
       }
