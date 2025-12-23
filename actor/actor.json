@@ -1,7 +1,27 @@
 {
   "actorSpecification": 1,
-  "name": "ai-tools-harvester",
+  "name": "ai-tools-harvestor",
   "title": "AI Tools Harvestor",
   "version": "1.0.0",
-  "output": "./output_schema.json"
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Recommended AI Tools",
+          "transformation": {
+            "fields": [
+              "name",
+              "website",
+              "category",
+              "score"
+            ]
+          },
+          "display": {
+            "component": "table"
+          }
+        }
+      }
+    }
+  }
 }
