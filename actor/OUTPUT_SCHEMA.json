@@ -3,9 +3,10 @@
   "title": "AI Tools Harvester Output",
   "description": "Results of AI tool recommendations",
   "properties": {
-    "dataset": {
-      "title": "Recommended AI Tools",
-      "type": "dataset",
+    "results": {
+      "type": "string",
+      "title": "Results",
+      "template": "{{links.apiDefaultDatasetUrl}}/items",
       "description": "Dataset containing AI tools recommended for the input query",
       "views": {
         "overview": {
@@ -27,3 +28,4 @@
     }
   }
 }
+
