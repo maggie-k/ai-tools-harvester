@@ -6,11 +6,17 @@
   "storages": {
     "dataset": {
       "actorSpecification": 1,
+      "fields": {
+        "name": { "type": "string", "title": "Tool Name" },
+        "website": { "type": "string", "title": "Website", "format": "uri" },
+        "category": { "type": "string", "title": "Category" },
+        "score": { "type": "number", "title": "Relevance Score" }
+      },
       "views": {
         "overview": {
           "title": "AI Tools Overview",
           "transformation": {
-            "fields": ["name", "website", "category", "score"]
+            "fields": ["name","website","category","score"]
           },
           "display": {
             "component": "table",
