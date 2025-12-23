@@ -3,6 +3,7 @@
   "name": "ai-tools-harvester",
   "title": "AI Tools Harvester",
   "version": "1.0.0",
+  "output": "./output_schema.json",
   "storages": {
     "dataset": {
       "actorSpecification": 1,
