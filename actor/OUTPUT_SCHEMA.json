@@ -11,32 +11,15 @@
         "overview": {
           "title": "AI Tools Overview",
           "transformation": {
-            "fields": [
-              "name",
-              "website",
-              "category",
-              "score"
-            ]
+            "fields": ["name", "website", "category", "score"]
           },
           "display": {
             "component": "table",
             "properties": {
-              "name": {
-                "label": "Tool Name",
-                "format": "text"
-              },
-              "website": {
-                "label": "Website",
-                "format": "link"
-              },
-              "category": {
-                "label": "Category",
-                "format": "text"
-              },
-              "score": {
-                "label": "Relevance Score",
-                "format": "number"
-              }
+              "name": { "label": "Tool Name", "format": "text" },
+              "website": { "label": "Website", "format": "link" },
+              "category": { "label": "Category", "format": "text" },
+              "score": { "label": "Relevance Score", "format": "number" }
             }
           }
         }
