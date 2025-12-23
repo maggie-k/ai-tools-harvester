@@ -1,29 +1,12 @@
 {
-  "title": "AI Tools Harvester Dataset",
-  "description": "Each item represents a discovered AI tool",
-  "type": "object",
+  "actorOutputSchemaVersion": 1,
+  "title": "AI Tools Harvester Output",
+  "description": "Results of AI tool recommendation",
   "properties": {
-    "name": {
-      "type": "string",
-      "title": "Tool name"
-    },
-    "description": {
-      "type": "string",
-      "title": "Description"
-    },
-    "website": {
-      "type": "string",
-      "title": "Website",
-      "format": "uri"
-    },
-    "category": {
-      "type": "string",
-      "title": "Category"
-    },
-    "score": {
-      "type": "number",
-      "title": "Relevance score"
+    "dataset": {
+      "title": "Recommended AI tools",
+      "type": "dataset",
+      "description": "Dataset containing recommended AI tools"
     }
-  },
-  "required": ["name", "website"]
+  }
 }
