@@ -1,42 +1,19 @@
-{
-  "actorSpecification": 1,
-  "name": "ai-tools-harvester",
-  "title": "AI Tools Harvester",
-  "version": "1.0.0",
-  "storages": {
-    "dataset": {
-      "actorSpecification": 1,
-      "views": {
-        "overview": {
-          "title": "Recommended AI Tools",
-          "transformation": {
-            "fields": [
-              "name",
-              "website",
-              "category",
-              "score"
-            ]
-          },
-          "display": {
-            "component": "table",
-            "properties": {
-              "name": {
-                "label": "Tool Name",
-                "format": "text"
-              },
-              "website": {
-                "label": "Website",
-                "format": "link"
-              },
-              "category": {
-                "label": "Category",
-                "format": "text"
-              },
-              "score": {
-                "label": "Relevance Score",
-                "format": "number"
-              }
-            }
+"storages": {
+  "dataset": {
+    "actorSpecification": 1,
+    "views": {
+      "overview": {
+        "title": "Recommended AI Tools",
+        "transformation": {
+          "fields": ["name", "website", "category", "score"]
+        },
+        "display": {
+          "component": "table",
+          "properties": {
+            "name": { "label": "Tool Name", "format": "text" },
+            "website": { "label": "Website", "format": "link" },
+            "category": { "label": "Category", "format": "text" },
+            "score": { "label": "Relevance Score", "format": "number" }
           }
         }
       }
