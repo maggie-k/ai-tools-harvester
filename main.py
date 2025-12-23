@@ -31,7 +31,7 @@ async def main():
         )
         print(f"Found {len(matches)} matches")
 
-        #any_pushed = False
+        any_pushed = False
         for match, score, idx in matches:
             print(f"Match: {match}, Score: {score}, Index: {idx}")
             row = df.iloc[idx]
@@ -43,12 +43,12 @@ async def main():
                     "score": score
                 }
                 await Actor.push_data(data)
-                #any_pushed = True
+                any_pushed = True
                 print("✅ Pushed to dataset:", data)
-            #else:
-                #print("Score below threshold; skipping.")
+            else:
+                print("Score below threshold; skipping.")
 
-        '''if not any_pushed:
+        if not any_pushed:
             print("No rows passed the threshold; pushing at least top match")
             # Pushes top match anyway to avoid empty dataset
             top_match = matches[0]
@@ -60,7 +60,7 @@ async def main():
                 "score": top_match[1]
             }
             await Actor.push_data(data)
-            print("✅ Pushed top match to dataset:", data)'''
+            print("✅ Pushed top match to dataset:", data)
 
         print("Actor run completed.")
 
