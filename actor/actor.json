@@ -1,0 +1,7 @@
+{
+  "actorSpecification": 1,
+  "name": "ai-tools-harvester",
+  "title": "AI Tools Harvestor",
+  "version": "1.0.0",
+  "output": "./output_schema.json"
+}
