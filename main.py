@@ -26,7 +26,7 @@ async def main():
         matches = process.extract(
             query,
             df["description"].fillna("").tolist(),
-            scorer=fuzz.token_sort_ratio,
+            scorer=fuzz.token_set_ratio,
             limit=max_results
         )
         print(f"Found {len(matches)} matches")
