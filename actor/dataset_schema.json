@@ -31,8 +31,7 @@
           "website",
           "category",
           "score"
-        ],
-        "desc": true
+        ]
       },
 
       "display": {
