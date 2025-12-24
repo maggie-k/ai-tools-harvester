@@ -5,5 +5,6 @@
   "version": "0.0",
   "buildTag": "latest",  
   "storages": {
-    "dataset": "./dataset_schema.json" }
+    "dataset": "./dataset_schema.json" 
+  }
 }
