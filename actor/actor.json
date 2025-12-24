@@ -7,5 +7,5 @@
   "input": "ai-tools-harvester/input_schema.json",
   "output":"./output_schema.json",
   "storages": {
-    "dataset": "ai-tools-harvester/dataset_schema.json" }
+    "dataset": "./dataset_schema.json" }
 }
