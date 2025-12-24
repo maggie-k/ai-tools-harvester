@@ -5,10 +5,15 @@ The actor empowers teams to stay ahead in the fast-moving AI ecosystem by automa
 It is also designed for developers, founders and researchers who need an automated way to collect up-to-date information about AI tools across the ecosystem.
 
 🚀 What this Actor does
+
 🔍 Crawls web sources to discover AI tools
+
 🧠 Extracts key metadata for each tool
+
 📊 Assigns a relevance score to help rank results
+
 🗂️ Stores results in a structured Apify Dataset
+
 🖥️ Presents output in a clean, table-based UI
 
 Each run produces a dataset where each item represents one AI tool.
