@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "ai-tools-harvester",
+  "title": "AI Tools Harvester",
+  "version": "1.0.0",
+  "buildTag": "latest",  
+  "storages": {
+    "dataset": "./dataset_schema.json" 
+  }
+}
