@@ -1,7 +1,7 @@
 {
   "actorSpecification": 1,
   "name": "ai-tools-harvester",
-  "title": AI Tools Harvester,
+  "title": "AI Tools Harvester",
   "version": "0.0",
   "buildTag": "latest",  
   "input": "ai-tools-harvester/input_schema.json",
