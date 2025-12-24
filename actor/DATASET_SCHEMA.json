@@ -1,11 +1,61 @@
 {
-  "title": "AI Tool Matches",
-  "type": "object",
-  "properties": {
-    "name": { "type": "string" },
-    "website": { "type": "string" },
-    "category": { "type": "string" },
-    "score": { "type": "number" }
+  "actorSpecification": 1,
+
+  "fields": {
+    "name": {
+      "type": "string",
+      "title": "Tool name"
+    },
+    "website": {
+      "type": "string",
+      "title": "Website",
+      "format": "uri"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    },
+    "score": {
+      "type": "number",
+      "title": "Relevance score"
+    }
   },
-  "required": ["name", "website", "score"]
+
+  "views": {
+    "overview": {
+      "title": "Overview",
+
+      "transformation": {
+        "fields": [
+          "name",
+          "website",
+          "category",
+          "score"
+        ],
+        "desc": true
+      },
+
+      "display": {
+        "component": "table",
+        "properties": {
+          "name": {
+            "label": "Tool name",
+            "format": "text"
+          },
+          "website": {
+            "label": "Website",
+            "format": "link"
+          },
+          "category": {
+            "label": "Category",
+            "format": "text"
+          },
+          "score": {
+            "label": "Relevance score",
+            "format": "number"
+          }
+        }
+      }
+    }
+  }
 }
