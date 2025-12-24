@@ -4,7 +4,6 @@
   "title": "AI Tools Harvester",
   "version": "0.0",
   "buildTag": "latest",  
-  "output":"./output_schema.json",
   "storages": {
     "dataset": "./dataset_schema.json" }
 }
