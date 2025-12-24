@@ -72,17 +72,7 @@ Input options: See the Input tab for configuration options. You can run the Acto
 
 Export the dataset in multiple formats directly from the Dataset tab or via the Apify API:
 
-JSON / JSONL
-
-CSV
-
-Excel
-
-XML
-
-HTML table
-
-RSS
+JSON / JSONL, CSV, Excel, XML, HTML table, RSS
 
 💰 Pricing & Compute Units
 
@@ -138,7 +128,7 @@ Q: Is the data collected public?
 A: Yes, only publicly available AI tool information is extracted.
 
 Q: Can I schedule recurring runs?
-A: Absolutely — use Apify scheduling to keep your dataset updated automatically.
+A: Absolutely, use Apify scheduling to keep your dataset updated automatically.
 
 Q: What if I need custom data extraction?
 A: Contact the author to discuss customizations or additional features.
