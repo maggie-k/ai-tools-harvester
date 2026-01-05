@@ -1,13 +1,16 @@
 {
-  "title": "Actor input schema",
+  "title": "AI Tools Harvester input",
+  "description": "Discover, score, and compare AI tools based on a specific use case.",
   "type": "object",
   "schemaVersion": 1,
   "properties": {
     "query": {
       "title": "Use case or task",
       "type": "string",
-      "description": "Describe what you want to use AI for (e.g. personal assistant, content writing, meeting notes).",
-      "editor": "textfield"
+      "description": "Describe what you want to use AI for (e.g. content writing, meeting notes, customer support).",
+      "editor": "textfield",
+      "prefill": "content writing tools",
+      "minLength": 3
     },
     "maxResults": {
       "sectionCaption": "Result settings",
@@ -36,15 +39,15 @@
     "sources": {
       "title": "Sources to include",
       "type": "array",
-      "description": "Optional list of sources to scrape AI tools from.",
+      "description": "Select AI tool directories to include.",
       "editor": "select",
       "items": {
         "type": "string",
         "enum": ["aitooldirectories"]
       },
-      "default": ["aitooldirectories"]
+      "default": ["aitooldirectories"],
+      "minItems": 1
     }
   },
   "required": ["query"]
 }
-
