@@ -1,9 +1,9 @@
 {
   "actorOutputSchemaVersion": 1,
-  "title": "AI Tools Harvester Output",
+  "title": "Output schema of the scraper",
   "description": "Results of AI tool recommendations",
   "properties": {
-    "dataset": {
+    "results": {
       "title": "Recommended AI Tools",
       "type": "dataset",
       "description": "Dataset containing AI tools recommended for the input query",
