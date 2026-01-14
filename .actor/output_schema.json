@@ -1,29 +1,13 @@
 {
   "actorOutputSchemaVersion": 1,
-  "title": "Output schema of the scraper",
-  "description": "Results of AI tool recommendations",
+  "title": "AI Tools Harvester output",
+  "description": "Structured dataset of discovered and scored AI tools.",
   "properties": {
     "results": {
-      "title": "Recommended AI Tools",
-      "type": "dataset",
-      "description": "Dataset containing AI tools recommended for the input query",
-      "views": {
-        "overview": {
-          "title": "AI Tools Overview",
-          "transformation": {
-            "fields": ["name", "website", "category", "score"]
-          },
-          "display": {
-            "component": "table",
-            "properties": {
-              "name": { "label": "Tool Name", "format": "text" },
-              "website": { "label": "Website", "format": "link" },
-              "category": { "label": "Category", "format": "text" },
-              "score": { "label": "Relevance Score", "format": "number" }
-            }
-          }
-        }
-      }
+      "type": "string",
+      "title": "AI Tools Dataset",
+      "description": "All discovered AI tools with metadata and relevance scores.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
     }
   }
 }
